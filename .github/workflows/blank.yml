@@ -12,6 +12,9 @@ on:
         required: true
         default: 'https://github.com/momo54181/action_build_twrp_device_tree/raw/main/recovery.img'
 
+permissions:
+  contents: write
+
 jobs:
   generate-device-tree:
     if: github.event.repository.owner.id == github.event.sender.id
